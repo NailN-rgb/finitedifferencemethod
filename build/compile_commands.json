@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/nail/mytestprojects/finitedifferencemethod/build",
+  "command": "/usr/bin/g++   -I/home/nail/mytestprojects/finitedifferencemethod/start -I/home/nail/mytestprojects/finitedifferencemethod/algebra  -g   -o CMakeFiles/FDM.dir/start/main.cpp.o -c /home/nail/mytestprojects/finitedifferencemethod/start/main.cpp",
+  "file": "/home/nail/mytestprojects/finitedifferencemethod/start/main.cpp"
+},
+{
+  "directory": "/home/nail/mytestprojects/finitedifferencemethod/build",
+  "command": "/usr/bin/g++   -I/home/nail/mytestprojects/finitedifferencemethod/start -I/home/nail/mytestprojects/finitedifferencemethod/algebra  -g   -o CMakeFiles/FDM.dir/algebra/details/UniformMesh.cpp.o -c /home/nail/mytestprojects/finitedifferencemethod/algebra/details/UniformMesh.cpp",
+  "file": "/home/nail/mytestprojects/finitedifferencemethod/algebra/details/UniformMesh.cpp"
+},
+{
+  "directory": "/home/nail/mytestprojects/finitedifferencemethod/build",
+  "command": "/usr/bin/g++   -I/home/nail/mytestprojects/finitedifferencemethod/start -I/home/nail/mytestprojects/finitedifferencemethod/algebra  -g   -o CMakeFiles/FDM.dir/algebra/details/Mesh1d.cpp.o -c /home/nail/mytestprojects/finitedifferencemethod/algebra/details/Mesh1d.cpp",
+  "file": "/home/nail/mytestprojects/finitedifferencemethod/algebra/details/Mesh1d.cpp"
+},
+{
+  "directory": "/home/nail/mytestprojects/finitedifferencemethod/build",
+  "command": "/usr/bin/g++   -I/home/nail/mytestprojects/finitedifferencemethod/start -I/home/nail/mytestprojects/finitedifferencemethod/algebra  -g   -o CMakeFiles/FDM.dir/algebra/details/matrix.cpp.o -c /home/nail/mytestprojects/finitedifferencemethod/algebra/details/matrix.cpp",
+  "file": "/home/nail/mytestprojects/finitedifferencemethod/algebra/details/matrix.cpp"
+},
+{
+  "directory": "/home/nail/mytestprojects/finitedifferencemethod/build",
+  "command": "/usr/bin/g++   -I/home/nail/mytestprojects/finitedifferencemethod/start -I/home/nail/mytestprojects/finitedifferencemethod/algebra  -g   -o CMakeFiles/FDM.dir/equation/details/equation.cpp.o -c /home/nail/mytestprojects/finitedifferencemethod/equation/details/equation.cpp",
+  "file": "/home/nail/mytestprojects/finitedifferencemethod/equation/details/equation.cpp"
+},
+{
+  "directory": "/home/nail/mytestprojects/finitedifferencemethod/build",
+  "command": "/usr/bin/g++   -I/home/nail/mytestprojects/finitedifferencemethod/start -I/home/nail/mytestprojects/finitedifferencemethod/algebra  -g   -o CMakeFiles/FDM.dir/solver/details/solver.cpp.o -c /home/nail/mytestprojects/finitedifferencemethod/solver/details/solver.cpp",
+  "file": "/home/nail/mytestprojects/finitedifferencemethod/solver/details/solver.cpp"
+},
+{
+  "directory": "/home/nail/mytestprojects/finitedifferencemethod/build",
+  "command": "/usr/bin/g++   -I/home/nail/mytestprojects/finitedifferencemethod/start -I/home/nail/mytestprojects/finitedifferencemethod/algebra  -g   -o CMakeFiles/FDM.dir/solver/details/sweep_method.cpp.o -c /home/nail/mytestprojects/finitedifferencemethod/solver/details/sweep_method.cpp",
+  "file": "/home/nail/mytestprojects/finitedifferencemethod/solver/details/sweep_method.cpp"
+}
+]

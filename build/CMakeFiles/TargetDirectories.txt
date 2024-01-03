@@ -1,0 +1,3 @@
+/home/nail/mytestprojects/finitedifferencemethod/build/CMakeFiles/rebuild_cache.dir
+/home/nail/mytestprojects/finitedifferencemethod/build/CMakeFiles/edit_cache.dir
+/home/nail/mytestprojects/finitedifferencemethod/build/CMakeFiles/FDM.dir

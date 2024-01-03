@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/FDM.dir/start/main.cpp.o CMakeFiles/FDM.dir/algebra/details/UniformMesh.cpp.o CMakeFiles/FDM.dir/algebra/details/Mesh1d.cpp.o CMakeFiles/FDM.dir/algebra/details/matrix.cpp.o CMakeFiles/FDM.dir/equation/details/equation.cpp.o CMakeFiles/FDM.dir/solver/details/solver.cpp.o CMakeFiles/FDM.dir/solver/details/sweep_method.cpp.o  -o FDM 
