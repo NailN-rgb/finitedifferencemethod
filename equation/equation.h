@@ -12,7 +12,7 @@ public:
     float ua, ub; //boundary values
 public:
     Equation();
-    Equation(float p, float r, float s, float q);
+    Equation(float p, float r, float s, float q, float ua, float ub);
 
 public:
 

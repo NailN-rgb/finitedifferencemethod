@@ -1,6 +1,11 @@
 #include "../matrix.h"
 
 //initializing free matrix
+Matrix::Matrix()
+{
+    this->size = 0;
+};
+
 Matrix::Matrix(unsigned int size)
 {
     this->size = size;
@@ -19,7 +24,7 @@ Matrix::~Matrix()
 {
     for(size_t i = 0; i < size; i++)
     {
-        delete matrix[i];
+        delete[] matrix[i];
     }
 }
 
@@ -50,7 +55,22 @@ float Matrix::get_value(unsigned int i, unsigned int j)
 
 void Matrix::matrix_display()
 {
+    if(size > 10)
+    {
+        std::cout << "Matrix is too big" << std::endl;
+    }
+    else
+    {
+        for(int i = 0; i < size; i++)
+        {
+            for(int j = 0; j < size; j++)
+            {
+                std::cout << matrix[i][j] << "\t";
+            }
 
+            std::cout << std::endl;
+        }
+    }
 }
 
 void Matrix::non_zero_elements()

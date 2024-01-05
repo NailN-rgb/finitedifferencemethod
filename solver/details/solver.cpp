@@ -1,15 +1,20 @@
 #include "../solver.h"
 
-Solver::Solver(UniformMesh um, Equation eq)
+Solver::Solver(UniformMesh um, Equation eq, float tol)
 {
     this->mesh = um;
     this->eq = eq;
     this->h = mesh.h;
+    this->size = mesh.n - 2;
+    this->tol = tol;
 
-    this->a = new float(size);
-    this->b = new float(size);
-    this->c = new float(size);
+    this->a = new float[size];
+    this->b = new float[size];
+    this->c = new float[size];
     
+    this->matrix = Matrix(size);
+    this->right = new float[size];
+    this->solution = new float[size];
 }
 
 void Solver::solve()
@@ -21,10 +26,7 @@ void Solver::solve()
         matrix_fill();
         right_hand_vector_fill();
 
-        for(size_t iter = 0; iter < 100; iter++)
-        {
-            //iterational proccees
-        }    
+        zeidel_method(solution, matrix.matrix, right, size, tol, 1000);
         break;
     
     case 2: //Tridiagonal matrix and sweep method
@@ -32,7 +34,7 @@ void Solver::solve()
         tridigonal_vectors(a, b, c);
         right_hand_vector_fill();
 
-        //sweep_method(a,b,c,f);
+        sweep_method(solution, a, b, c, right, size);
         break;
 
     default:
@@ -43,9 +45,15 @@ void Solver::solve()
 
 Matrix Solver::matrix_fill()
 {
-    Matrix matrix(size);
     for(size_t row = 0; row < size; row++)
     {
+        if(row == 0)
+        {
+            
+        }
+
+
+
         for(size_t col = 0; col < size; col++)
         {
             if(row == col)
@@ -83,8 +91,6 @@ void Solver::tridigonal_vectors(float *a, float *b, float *c)
 
 void Solver::right_hand_vector_fill()
 {
-    float *right = new float(size);
-
     for(size_t i = 0; i < size; i++)
     {
         right[i] = eq.f(mesh.mesh[i]);
@@ -93,5 +99,8 @@ void Solver::right_hand_vector_fill()
 
 void Solver::display_results()
 {
-
+    for(int i = 0; i < size; i++)
+    {
+        std::cout << mesh.mesh[i] << ":\t" << solution[i] << std::endl;
+    }
 }

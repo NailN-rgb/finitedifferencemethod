@@ -1,6 +1,8 @@
 #include "../algebra/UniformMesh.h"
 #include "../equation/equation.h"
 #include "../algebra/matrix.h"
+#include "details/sweep_method.cpp"
+#include "details/zeidel.cpp"
 
 #include <cmath>
 
@@ -10,17 +12,20 @@ public:
     UniformMesh mesh;
     Equation eq;
     float h;
-    unsigned int size = mesh.n - 2; //for first BC
+    unsigned int size; //for first BC
 
-    float *right = new float(size); //rhs
+    Matrix matrix;
+    float *right;//rhs
 
     float *a, *b, *c;
+
+    float *solution; // solution vector
 
     int solve_type; //1 - sweep_method, 2 - zeidel iterational method
     float tol;
 
 public:
-    Solver(UniformMesh um, Equation eq);
+    Solver(UniformMesh um, Equation eq, float tol = 0.01);
     
 public:
     void solve();

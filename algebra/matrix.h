@@ -11,6 +11,7 @@ public:
 
 public:
     //initializing free matrix
+    Matrix();
     Matrix(unsigned int size);
 
 public:

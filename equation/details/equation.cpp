@@ -13,7 +13,7 @@ Equation::Equation()
     this->phi = 0;
 }
 
-Equation::Equation(float p, float r, float s, float q)
+Equation::Equation(float p, float r, float s, float q, float ua, float ub)
 {
     this->p = p;
     this->r = r;
